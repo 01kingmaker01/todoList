@@ -1,0 +1,106 @@
+body {
+  background: #00f260; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #0575e6,
+    #00f260
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #0575e6,
+    #00f260
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.container {
+  margin: 100px auto;
+  width: 360px;
+
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+h1 {
+  margin: 0;
+  padding: 10px 20px;
+  background-color: #2980b9;
+  color: #fff;
+  font-weight: normal;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.fa-plus {
+  float: right;
+  text-shadow: 2px 1px 1px black;
+}
+
+.completed {
+  color: gray;
+  text-decoration: line-through;
+}
+input {
+  padding: 13px 13px 13px 20px;
+  margin: 0;
+  width: 100%;
+  font-size: 18px;
+  color: #2980b9;
+  background-color: #f0f0f0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+}
+
+input:focus {
+  border: 3px solid #2980b9;
+  outline: none;
+}
+
+::placeholder {
+  color: rgba(94, 85, 62, 0.452);
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  outline: none;
+}
+
+ul:hover {
+  cursor: default;
+}
+
+li {
+  height: 40px;
+  background: #fff;
+  line-height: 40px;
+  text-transform: uppercase;
+  box-sizing: border-box;
+}
+
+li:nth-child(2n) {
+  background-color: #f0f0f0;
+}
+
+span {
+  color: white;
+  background-color: red;
+  margin-right: 20px;
+  height: 40px;
+  width: 0;
+  display: inline-block;
+  text-align: center;
+  transition: 0.3s;
+  box-sizing: border-box;
+  opacity: 0;
+}
+
+li:hover span {
+  width: 40px;
+  opacity: 1;
+}
+
+.dp {
+  display: none;
+}
